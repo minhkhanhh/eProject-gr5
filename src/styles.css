@@ -26,14 +26,23 @@ img{
   width: 1200px;
   margin: 0 auto;
 }
-.sidebar{
+.sidebarright{
   float: right;
-  width: 25%;
+  width: 10%;
 }
+
+
 .content{
   float: right;
-  width: 75%;
+  width: 80%;
 }
+
+
+.sidebarleft{
+  float: right;
+  width: 10%;
+}
+
 .footer li i{
   font-size: 50px;
   color: yellow;
