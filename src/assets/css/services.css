@@ -50,7 +50,7 @@
 .column-8,
 .column-9 {
   float: left;
-  padding: 15px
+  padding: 50px
 }
 
 .effectTab-header .title::after,
@@ -95,7 +95,7 @@ body {
 }
 
 .column-4 {
-  width: 33.33333333333333%
+  width: 40.33333333333333%
 }
 
 .column-5 {
@@ -145,7 +145,7 @@ body {
 }
 
 .wrapper {
-  max-width: 1140px;
+  max-width: 2000px;
   margin: 0 auto;
   position: relative
 }
@@ -303,7 +303,7 @@ body {
 }
 
 .box-tab {
-  margin: 10px 0
+  margin: 30px -65px
 }
 
 .effect {
@@ -669,7 +669,7 @@ body {
   padding-top: 20%;
   -webkit-transition: -webkit-transform .35s;
   transition: transform .35s;
-  font-weight: 600;F
+  font-weight: 600;
 font-size: 1.7rem;
   font-family: Oswald, sans-serif
 }

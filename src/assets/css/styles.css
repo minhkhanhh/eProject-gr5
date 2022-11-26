@@ -123,6 +123,7 @@ h2, .h2 {
 }
 @media (min-width: 1200px) {
   h2, .h2 {
+    text-align: center;
     font-size: 2rem;
   }
 }
@@ -11800,7 +11801,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 /*decoration*/
 h1{
   margin: 20px 50px 0;
-  background: #EFF0F2;
+
 
   text-align: center;
   border-radius: 5px 5px 0 0;
@@ -11930,3 +11931,91 @@ h1:before{
 
 
 
+.box {
+  width: 18.5%;
+  display: inline-block;
+  font-size: 90px;
+  font-weight: bold;
+  text-align: center;
+  color: #965169;
+  position: relative;
+  animation: zoom 4s infinite;
+  animation-timing-function: cubic-bezier(.626,0,0,1);
+}
+
+
+.box:nth-child(1) {
+  animation-delay: 0.2s;
+}
+
+.box:nth-child(2) {
+  animation-delay: 1.3s;
+}
+
+.box:nth-child(3) {
+  animation-delay: 0.5s;
+}
+
+.box:nth-child(4) {
+  animation-delay: -0.5s;
+}
+
+
+@keyframes zoom {
+  0% {
+    transform: translateZ(1000px);
+    opacity: 1;
+  }
+
+  60% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateZ(0px);
+    opacity: 0;
+  }
+}
+
+.son5 {
+  padding-top: 27rem;
+  padding-bottom: 12rem;
+  background-image: url(../assets/img/anh/son5.jpg);
+  max-width: 1870px;
+}
+
+.wrapper1 {
+  padding: 200px;
+  width: 100%;
+  overflow: hidden;
+
+}
+.wrapper {
+
+  width: 100%;
+  overflow: hidden;
+}
+.photobanner {
+  position: relative;
+  height: 233px;
+  margin-bottom: 30px;
+  display: flex;
+  width: 100%;
+}
+
+.photobanner img {
+  margin: -60px 60px;
+  box-shadow: 2px 2px 8px #8a8a8a;
+}
+
+.photobanner {
+  animation: bannermove 50s linear infinite alternate-reverse;
+}
+
+@keyframes bannermove {
+  from {
+    left: 0px;
+  }
+  to {
+    left: -2700px;
+  }
+}
