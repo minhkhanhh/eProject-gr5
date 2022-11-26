@@ -859,7 +859,7 @@ font-size: 1.7rem;
 }
 
 .effect.effect-three {
-  background: linear-gradient(-45deg, #0C71E9 0, #034B96, 100%);
+  background: linear-gradient(-45deg, #0C71E9 0, #034B96 100%);
   text-align: left
 }
 
