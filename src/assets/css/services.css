@@ -693,14 +693,14 @@ font-size: 1.7rem;
 }
 
 .effect.effect-one p {
-  padding: 5em 2.7em;
+  padding: 2em 3.7em;
   text-transform: none;
   opacity: 0;
   -webkit-transform: translate3d(0, -10px, 0);
   transform: translate3d(0, -10px, 0);
-  font-size: .92rem;
-  line-height: 16px;
-  color: rgba(255, 255, 255, .9)
+  font-size: 1.5rem;
+  line-height: 37px;
+  color: rgb(2 9 42)
 }
 
 .effect.effect-one h2,
