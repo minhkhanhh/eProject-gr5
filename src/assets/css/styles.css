@@ -11818,7 +11818,7 @@ h1:before{
 }
 .product-review-stars{
   margin: 10px 857px;
-  background: #212529;
+  background: #6d4153;
   padding: 20px 35px 20px 20px;
 }
 
@@ -11978,7 +11978,7 @@ h1:before{
 
 .son5 {
   padding-top: 27rem;
-  padding-bottom: 12rem;
+  padding-bottom: 11rem;
   background-image: url(../assets/img/anh/son5.jpg);
   max-width: 1870px;
 }
@@ -12017,5 +12017,44 @@ h1:before{
   }
   to {
     left: -2700px;
+  }
+}
+
+
+svg #line {
+  fill: none;
+  stroke: #ff789b;
+  stroke-width: 1.5;
+  stroke-linecap: butt;
+  stroke-linejoin: round;
+  stroke-miterlimit: 4;
+
+  stroke-opacity: 1;
+  stroke-dasharray: 1;
+  stroke-dashoffset: 1;
+  animation: dash 3s linear infinite;
+}
+svg #point {
+  fill: none;
+  stroke: #ff789b;
+  stroke-width: 5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-miterlimit: .1;
+  stroke-opacity: 1;
+  stroke-dasharray: .0001, .9999;
+  stroke-dashoffset: 1;
+  animation: dash 3s linear infinite;
+}
+
+@keyframes dash {
+  0% {
+    stroke-dashoffset: 1;
+  }
+  80% {
+    stroke-dashoffset: 0;
+  }
+  100% {
+    stroke-dashoffset: 0;
   }
 }
