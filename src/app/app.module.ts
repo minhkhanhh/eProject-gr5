@@ -11,6 +11,15 @@ import { AboutComponent } from './layout/about/about.component';
 import { TeamComponent } from './layout/team/team.component';
 import { ContactComponent } from './layout/contact/contact.component';
 import { ReviewComponent } from './layout/review/review.component';
+import { Event1Component } from './layout/event1/event1.component';
+import { Event2Component } from './layout/event2/event2.component';
+import { Event3Component } from './layout/event3/event3.component';
+import { Event4Component } from './layout/event4/event4.component';
+import { Event5Component } from './layout/event5/event5.component';
+import { Event6Component } from './layout/event6/event6.component';
+import { Event7Component } from './layout/event7/event7.component';
+import { Event8Component } from './layout/event8/event8.component';
+import { Event9Component } from './layout/event9/event9.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +31,16 @@ import { ReviewComponent } from './layout/review/review.component';
     AboutComponent,
     TeamComponent,
     ContactComponent,
-    ReviewComponent
+    ReviewComponent,
+    Event1Component,
+    Event2Component,
+    Event3Component,
+    Event4Component,
+    Event5Component,
+    Event6Component,
+    Event7Component,
+    Event8Component,
+    Event9Component
   ],
   imports: [
     BrowserModule,
