@@ -618,6 +618,8 @@ progress {
   color: #6c757d;
 }
 
+
+
 .container,
 .container-fluid,
 .container-xxl,
@@ -654,7 +656,7 @@ progress {
 }
 @media (min-width: 1400px) {
   .container-xxl, .container-xl, .container-lg, .container-md, .container-sm, .container {
-    max-width: 1430px;
+    max-width: 1650px;
   }
 }
 .row {
@@ -3021,9 +3023,9 @@ textarea.form-control-lg {
 }
 
 .btn-primary {
-  color: #ff7691;
+  color: #f04d45;
 
-  border-color: #ff7691;
+  border-color: #f04d45;
 }
 .btn-primary:hover {
   color: #fff;
@@ -11354,7 +11356,7 @@ p {
 #mainNav .navbar-nav .nav-item .nav-link {
   font-family: "Montserrat", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.1rem;
-  color: #ff7691;
+  color: #bd1817;
   letter-spacing: 0.0625em;
 }
 #mainNav .navbar-nav .nav-item .nav-link.active, #mainNav .navbar-nav .nav-item .nav-link:hover {
@@ -11374,7 +11376,7 @@ p {
     transition: font-size 0.3s ease-in-out;
   }
   #mainNav .navbar-brand img {
-    height: 5rem;
+    height: 9rem;
     transition: height 0.3s ease-in-out;
   }
   #mainNav.navbar-shrink {
@@ -11387,7 +11389,7 @@ p {
   }
   #mainNav.navbar-shrink .navbar-brand svg,
 #mainNav.navbar-shrink .navbar-brand img {
-    height: 3rem;
+    height: 5rem;
   }
   #mainNav .navbar-nav .nav-item {
     margin-right: 1rem;
@@ -11400,8 +11402,8 @@ header.masthead {
   padding-top: 10.5rem;
   padding-bottom: 6rem;
   text-align: center;
-  color: #ff7691;
-  background-image: url("../assets/img/anh/head5.jpg");
+  color: #f04d45;
+  /*background-image: url("../assets/img/anh/head5.jpg");*/
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-position: center center;
@@ -11424,8 +11426,8 @@ header.masthead .masthead-heading {
 
 @media (min-width: 768px) {
   header.masthead {
-    padding-top: 25rem;
-    padding-bottom: 20rem;
+    padding-top: 15rem;
+    padding-bottom: 7rem;
   }
   header.masthead .masthead-subheading {
     font-size: 2.25rem;
@@ -11796,7 +11798,7 @@ h1{
   text-align: center;
   border-radius: 5px 5px 0 0;
 
-  color: #6d4153;
+  color: #bd1817;
 }
 h1:before{
 
@@ -11927,7 +11929,7 @@ h1:before{
   font-size: 90px;
   font-weight: bold;
   text-align: center;
-  color: #965169;
+  /*color: #965169;*/
   position: relative;
   animation: zoom 4s infinite;
   animation-timing-function: cubic-bezier(.626,0,0,1);
@@ -11981,9 +11983,12 @@ h1:before{
 
 .son5 {
   padding-top: 27rem;
-  padding-bottom: 9rem;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 30rem;
   background-image: url(../assets/img/anh/son5.jpg);
   max-width: 1870px;
+
 }
 
 .wrapper1 {
@@ -12026,7 +12031,7 @@ h1:before{
 
 svg #line {
   fill: none;
-  stroke: #ff789b;
+  stroke: #bd1817;
   stroke-width: 1.5;
   stroke-linecap: butt;
   stroke-linejoin: round;
@@ -12064,4 +12069,6 @@ svg #point {
 
 .son1{
   font-family: cursive;
+
 }
+
