@@ -23,7 +23,7 @@ const routes: Routes = [
   { path: 'services', component: TeamComponent },
   { path: 'contact', component: ContactComponent },
   { path: 'review', component: ReviewComponent },
-  { path: 'event1', component: Event1Component },
+  { path: 'event1/:id', component: Event1Component },
   { path: 'event2', component: Event2Component },
   { path: 'event3', component: Event3Component },
   { path: 'event4', component: Event4Component },

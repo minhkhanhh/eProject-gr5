@@ -20,6 +20,9 @@ import { Event6Component } from './layout/event6/event6.component';
 import { Event7Component } from './layout/event7/event7.component';
 import { Event8Component } from './layout/event8/event8.component';
 import { Event9Component } from './layout/event9/event9.component';
+import { HttpClientModule} from "@angular/common/http";
+import {FormsModule} from "@angular/forms";
+//import {RouterModule,Routes, ROUTES} from "@angular/router";
 
 @NgModule({
   declarations: [
@@ -44,7 +47,9 @@ import { Event9Component } from './layout/event9/event9.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+   // RouterModule.forRoot(appRoutes),
+    HttpClientModule, FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
