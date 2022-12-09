@@ -29,18 +29,18 @@ export class Event1Component  implements OnInit {
       this.http.get<Data[]>(url2).subscribe(data1 => {
         this.product = data1;
         console.log(data1);
-      })
+      });
     const url3 = 'http://localhost:5000/local-from-eventype-by-id?id=' + this.id;
     this.http.get<Data[]>(url3).subscribe(data2 => {
       this.location = data2;
       console.log(data2);
-    })
+    });
 
     const url4 = 'http://localhost:5000/service-from-eventype-by-id?id=' + this.id;
     this.http.get<Data[]>(url4).subscribe(data3 => {
       this.service = data3;
       console.log(data3);
-    })
+    });
 
     const url5='http://localhost:5000/get-events-by-type?id=' + this.id;
     this.http.get<Data[]>(url5).subscribe(data4 => {

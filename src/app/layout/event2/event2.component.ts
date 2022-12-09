@@ -11,10 +11,33 @@ import {ActivatedRoute} from "@angular/router";
 export class Event2Component {
 
   id: number = 0;
-  product: Data[] = [];
+  eventdt: Data[] = [];
+  customer: Data[] = [];
+  local: Data[] = [];
+  review: Data[] = [];
   constructor(private http: HttpClient, private route:ActivatedRoute) {}
 
   ngOnInit(){
+    this.id = this.route.snapshot.params['id'];
+    const url='http://localhost:5000/detail-event?id=' + this.id;
+    this.http.get<Data[]>(url).subscribe(data => {
+      this.eventdt = data;
+    });
+
+    const url5='http://localhost:5000/customers-by-event?id=' + this.id;
+    this.http.get<Data[]>(url5).subscribe(data4 => {
+      this.customer = data4;
+    });
+
+    const url2='http://localhost:5000/local-from-event?id=' + this.id;
+    this.http.get<Data[]>(url2).subscribe(data2 => {
+      this.local = data2;
+    });
+
+    const url3='http://localhost:5000/reviews-from-event?id=' + this.id;
+    this.http.get<Data[]>(url3).subscribe(data1 => {
+      this.review= data1;
+    });
 
   }
 }
