@@ -15,4 +15,19 @@ export interface Data {
   NameServ: string;
   ServPrice: number;
   ServicePeople: number;
+  EventID: number;
+  EvName: string;
+  Descrip: string;
+  Event_Start: Date;
+  Event_End: Date;
+  SeatQty: number;
+  RatingAVG: number;
+  CustoID: number;
+  CustoName: string;
+  CustoAddress: string;
+  CustoTel: string;
+  ReviewID: number;
+  Email: string;
+  Rating: number;
+  Comment: string;
 }

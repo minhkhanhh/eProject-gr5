@@ -1,5 +1,5 @@
 <img src="https://workshop.vn/wp-content/uploads/2021/07/concert-1421932_1280-e1583915263831.jpg">
-      <div class="col-6" *ngFor=" let f of product| slice: 0: 1">
+      <div class="col-6" *ngFor=" let f of product">
         <div class="card">
 
           <div class="card-body">
@@ -11,7 +11,7 @@
         </div>
       </div>
 <div> <h4> Location for event </h4></div>
-<div class="col-3" *ngFor=" let f of product" >
+<div class="col-3" *ngFor=" let f of location" >
   <ul>
   <li>Location: {{f.NameLocal}}</li>
   <li>Address: {{f.Address}}</li>
@@ -22,5 +22,53 @@
    </ul>
 </div>
 
+<div> <h4> Service Package  </h4></div>
+<div class="col-3" *ngFor=" let f of service" >
+  <ul>
+    <li>Pack Name: {{f.NameServ}}</li>
+    <li>Price: {{f.ServPrice}}</li>
+    <li>People Sevice: {{f.ServicePeople}} </li>
+  </ul>
+</div>
 
 
+//carousel end
+
+<div id="carouselExampleCaptions" class="carousel slide col-3" data-bs-ride="false" *ngFor="let item of event">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+
+    <div class="carousel-item active">
+      <img src="" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5> Past Event</h5>
+        <p> Click for Continue </p>
+      </div>
+    </div>
+
+    <div class="carousel-item"  *ngFor="let item of event">
+      <img  src="https://workshop.vn/wp-content/uploads/2021/07/concert-1421932_1280-e1583915263831.jpg" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <a href="#" routerLink="/event2/{{item.ID}}"> <img src="https://workshop.vn/wp-content/uploads/2021/07/concert-1421932_1280-e1583915263831.jpg" class="img-fluid">
+        <h5>{{item.EvName}}</h5>
+        <p> </p>
+        </a>
+      </div>
+    </div>
+
+
+
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
