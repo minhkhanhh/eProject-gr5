@@ -30,4 +30,7 @@ export interface Data {
   Email: string;
   Rating: number;
   Comment: string;
+  Fileimage: string;
+  imageID: number;
+  EvTyGalley: string;
 }

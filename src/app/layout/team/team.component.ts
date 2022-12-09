@@ -19,6 +19,8 @@ export class TeamComponent implements OnInit {
     this.http.get<Data[]>(url).subscribe(data => {
       this.category = data;
     });
+
+
   }
 
 
