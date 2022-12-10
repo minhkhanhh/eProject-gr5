@@ -6,8 +6,19 @@
 </div>
 
 
-    <div class="container">
-      <div class="gallery">
+<div class="container">
+  <div class="gallery " >
+
+    <div *ngFor="let f of gallery"><a
+      href="../assets/assets/{{f.Fileimage}}"
+      data-lightbox="models"
+      data-title="{{f.EvTyName}}"
+    >
+      <img
+        src="../assets/assets/{{f.Fileimage}}"
+      />
+    </a> </div>
+
         <a
           href="https://cybershow.vn/wp-content/uploads/2018/09/trung-tam-to-chuc-su-kien-7-640x447.png"
           data-lightbox="models"

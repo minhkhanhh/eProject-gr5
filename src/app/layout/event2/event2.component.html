@@ -1,8 +1,9 @@
-<img src="https://workshop.vn/wp-content/uploads/2021/07/concert-1421932_1280-e1583915263831.jpg">
+
 <div class="col-6" >
   <div class="card">
 
     <div class="card-body" *ngFor=" let f of eventdt">
+      <img src="/../assets/assets/{{f.EvGalle}}">
       <h4>{{f.EvName}}</h4>
       <p>{{f.Descrip}}</p>
       <p > When Event start: {{f.Event_Start}}</p>
@@ -19,7 +20,7 @@
     <div class="card-body" *ngFor=" let f of local">
       <p> From Local</p>
       <p>Name : {{f.NameLocal}}</p>
-      <p>From: {{f.Address}}</p>
+      <p>Address: {{f.Address}}</p>
       <p>Tel : {{f.Tel}}</p>
     </div>
   </div>
@@ -54,7 +55,7 @@
 
             <div class="d-flex justify-content-between">
               <div class="d-flex flex-row align-items-center">
-                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(4).webp" alt="avatar" width="25"
+                <img src="../assets/assets/img/anh/OIP.png" alt="avatar" width="25"
                      height="25" />
                 <p class="small mb-0 ms-2">{{f.Email}}</p>
               </div>
