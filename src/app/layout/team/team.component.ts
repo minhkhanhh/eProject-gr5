@@ -15,7 +15,7 @@ export class TeamComponent implements OnInit {
   constructor(private http: HttpClient) {
   }
   ngOnInit(){// ham nay tu dong chay khi print giao dien
-    const url='http://localhost:5000/alleventype';
+    const url='http://localhost:3200/alleventype';
     this.http.get<Data[]>(url).subscribe(data => {
       this.category = data;
     });

@@ -15,7 +15,7 @@ export class GalleryComponent implements OnInit {
   }
   ngOnInit(){// ham nay tu dong chay khi print giao dien
 
-    const url='http://localhost:5000/gallery';
+    const url='http://localhost:3200/gallery';
     this.http.get<Data[]>(url).subscribe(data => {
       this.gallery = data;
     });
