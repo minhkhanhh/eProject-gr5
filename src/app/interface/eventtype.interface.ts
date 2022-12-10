@@ -18,6 +18,7 @@ export interface Data {
   EventID: number;
   EvName: string;
   Descrip: string;
+  EvGalle: string;
   Event_Start: Date;
   Event_End: Date;
   SeatQty: number;
