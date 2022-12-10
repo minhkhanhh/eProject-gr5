@@ -237,3 +237,41 @@ p{
     max-width: 80%;
   }
 }
+
+.tests{
+  text-align: center;
+}
+
+.test{
+  font-weight: bold;
+  animation: heading 2s;
+  animation-fill-mode: forwards;
+
+}
+
+.paragraph{
+  animation: paragraph 1s;
+  animation-fill-mode: forwards;
+
+
+
+}
+
+@keyframes paragraph{
+  0% {
+    transform: translateY(-5px);
+    opacity: 0;
+    animation-delay: 1s;
+  }
+
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+
+}
+
+@keyframes heading{
+  0%{transform:translateY(-5px); opacity: 0;}
+  100%{ transform: translateY(0px); opacity:1 ;}
+}
