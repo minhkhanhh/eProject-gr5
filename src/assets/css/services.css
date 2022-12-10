@@ -22,14 +22,14 @@
   padding-bottom: 20px;
   position: relative;
   display: inline-block;
-  color: #fe7696;
+  color: #ed4046;
   margin: 0 0 20px;
   text-align: center;
   text-transform: uppercase
 }
 
 .effectTab-header .title {
-  font-size: 36px;
+  font-size: 40px;
   font-family: Oswald, sans-serif
 }
 
@@ -56,7 +56,7 @@
 .effectTab-header .title::after,
 .effectTab-header .title::before {
   position: absolute;
-  background: linear-gradient(to right, #ed6ea0 0, #ec8c69 100%);
+  background: linear-gradient(to right, #ed6ea0 0, #ed4047 100%);
   content: ""
 }
 
