@@ -1,4 +1,5 @@
-<div class="container">
+<section style="padding-top:170px;">
+<div class="container"  >
   <div class="row">
     <div class="col-2"></div>
       <div class="col-8" *ngFor=" let f of product">
@@ -13,33 +14,36 @@
           </div>
         </div>
       </div>
-    <div class="col-2"></div>
-<div> <h4> Some Location for event </h4></div>
-<div class="col-3" *ngFor=" let f of location" >
-  <ul>
-  <li>Location: {{f.NameLocal}}</li>
-  <li>Address: {{f.Address}}</li>
-     <li>Time Open: {{f.Time_Open}}</li>
-     <li>Time Close: {{f.Time_Close}}</li>
-     <li> Total Seat: {{f.TotalSeatQty}}</li>
-     <li> Tel: {{f.Tel}}</li>
-   </ul>
-</div>
 
-<div> <h4> Service Package  </h4></div>
-<div class="col-3" *ngFor=" let f of service" >
-  <ul>
-    <li>Pack Name: {{f.NameServ}}</li>
-    <li>Price: {{f.ServPrice}}</li>
-    <li>People Sevice: {{f.ServicePeople}} </li>
-  </ul>
-</div>
+    <div> <h4> Service Locations  </h4></div>
+        <div class="col-3" *ngFor=" let f of location">
+
+              <ul>
+                <li>Location: {{f.NameLocal}}</li>
+                <li>Address: {{f.Address}}</li>
+                <li>Time Open: {{f.Time_Open}}</li>
+                <li>Time Close: {{f.Time_Close}}</li>
+                <li> Total Seat: {{f.TotalSeatQty}}</li>
+                <li> Tel: {{f.Tel}}</li>
+              </ul>
+
+        </div>
 
 
-//carousel
+           <div> <h4> Service Package  </h4></div>
+              <div class="col-3" *ngFor=" let f of service" >
+               <ul>
+                 <li>Pack Name: {{f.NameServ}}</li>
+                   <li>Price: {{f.ServPrice}}</li>
+                      <li>People Sevice: {{f.ServicePeople}} </li>
+                    </ul>
+               </div>
 
-<div class="col-3"></div>
-<div id="carouselExampleCaptions" class="carousel slide col-6" data-bs-ride="false" >
+
+
+
+<div> </div>
+<div id="carouselExampleCaptions" class="carousel slide col-3 col-sm-3 col-xl-3 col-lg-3 justify-content-center align-content-center" data-bs-ride="false" >
 
   <div class="carousel-inner">
 
@@ -52,7 +56,7 @@
     </div>
 
     <div class="carousel-item"  *ngFor="let item of event">
-      <img  src="/../assets/assets/{{item.EvGalle}}" class="d-block w-100" alt="...">
+      <img  src="/../assets/assets/{{item.EvGalle}}" class="d-block w-100 image-center" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <a href="#" routerLink="/detailEv/{{item.EventID}}">
           <h5>{{item.EvName}}</h5>
@@ -72,6 +76,7 @@
     <span class="visually-hidden">Next</span>
   </button>
 </div>
-    <div class="col-3"></div>
+
   </div>
 </div>
+</section>

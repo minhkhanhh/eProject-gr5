@@ -1,4 +1,4 @@
-<section class="wrapper-full tab-container effectTab-header" id="style_1" style="padding-top:300px;">
+<section class="wrapper-full tab-container effectTab-header" id="style_1" style="padding-top:170px;">
   <div class="wrapper tab-item">
     <div class="custom-row">
       <div class="wrapper " align="center">
@@ -7,13 +7,12 @@
       <div class="column-12 column-xs-12 column-sm-12 tab">
         <div class="custom-row">
           <div class="column-4 column-md-6 column-xs-12 hide-sm hide-md box-tab" *ngFor="let item of category">
-            <div class="effect effect-one">
-              <a href="#" routerLink="/detailEvTy/{{item.ID}}"> <img src="/../assets/assets/{{item.EvTyGalley}}" class="img-fluid">
+            <div class="effect effect-one col-12">
+              <a href="#" routerLink="/detailEvTy/{{item.ID}}"> <img  src="/../assets/assets/{{item.EvTyGalley}}" class="img-fluid image-center">
               </a>
-
             </div>
 
-            <div class="column-12 column-xs-12">
+            <div class="col-3 col-xs-3 col-sm-3">
               <p>{{item.EvTyName}}</p>
             </div>
 
