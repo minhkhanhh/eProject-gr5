@@ -19,22 +19,22 @@ export class Event2Component {
 
   ngOnInit(){
     this.id = this.route.snapshot.params['id'];
-    const url='http://localhost:3200/detail-event?id=' + this.id;
+    const url='http://139.180.186.20:3200/detail-event?id=' + this.id;
     this.http.get<Data[]>(url).subscribe(data => {
       this.eventdt = data;
     });
 
-    const url5='http://localhost:3200/customers-by-event?id=' + this.id;
+    const url5='http://139.180.186.20:3200/customers-by-event?id=' + this.id;
     this.http.get<Data[]>(url5).subscribe(data4 => {
       this.customer = data4;
     });
 
-    const url2='http://localhost:3200/local-from-event?id=' + this.id;
+    const url2='http://139.180.186.20:3200/local-from-event?id=' + this.id;
     this.http.get<Data[]>(url2).subscribe(data2 => {
       this.local = data2;
     });
 
-    const url3='http://localhost:3200/reviews-from-event?id=' + this.id;
+    const url3='http://139.180.186.20:3200/reviews-from-event?id=' + this.id;
     this.http.get<Data[]>(url3).subscribe(data1 => {
       this.review= data1;
     });
