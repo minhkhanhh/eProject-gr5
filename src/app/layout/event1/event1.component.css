@@ -1,5 +1,21 @@
 .carousel{
 
-  margin-left:600px ;
+  margin-left:555px ;
 
+}
+
+.son6{
+  padding-left: 273px;
+}
+
+.son7{
+  background-color: black;
+  opacity: 0.5;
+  color: white;
+}
+
+.anh {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }

@@ -145,9 +145,10 @@ h6, .h6 {
 }
 
 p {
-  margin-top: 0;
+  margin-top: 10px;
   margin-bottom: 1rem;
-  margin-left: 204px;
+  margin-left: 166px;
+  width: 500px;
 }
 
 abbr[title],
@@ -729,7 +730,7 @@ progress {
 
 .col-2 {
   flex: 0 0 auto;
-  width: 16.66666667%;
+  /*width: 16.66666667%;*/
 }
 
 .col-3 {
@@ -758,6 +759,7 @@ progress {
 }
 
 .col-8 {
+  height: 600px;
   flex: 0 0 auto;
   width: 66.66666667%;
 }
@@ -7767,6 +7769,7 @@ textarea.form-control-lg {
 .text-muted {
   --bs-text-opacity: 1;
   color: #6c757d !important;
+  margin-left: -10px;
 }
 
 .text-black-50 {
@@ -11810,8 +11813,8 @@ h1:before{
   padding: 12px 0;
 }
 .product-review-stars{
-  margin: 10px -110px;
-  background: #6d4153;
+  margin: 10px -95px;
+  background: #212529;
   padding: 20px 35px 20px 20px;
 }
 
@@ -12074,4 +12077,5 @@ svg #point {
 }
 .son9{
   margin-left: 1px;
+  width: 100%;
 }

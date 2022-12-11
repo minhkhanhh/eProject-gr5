@@ -1,36 +1,41 @@
 <div class="container" style="padding-top:200px;">
   <div class="row">
     <div class="col-2"></div>
-      <div class="col-8" *ngFor=" let f of product">
-        <div class="card">
-          <img src="/../assets/assets/{{f.EvTyGalley}}">
 
-          <div class="card-body">
-            <h4>{{f.EvTyName}}</h4>
-            <p>{{f.EvTyDecs}}</p>
-            <p > Expected Price : {{f.EPrice}}</p>
+      <div class="col-8" *ngFor=" let f of product">
+
+          <h4 style="font-size: 60px; padding-top: 80px">{{f.EvTyName}}</h4>
+          <img style="width: 600px; height: 432px" src="/../assets/assets/{{f.EvTyGalley}}">
+
+            <p style="margin-top: -432px;
+    margin-bottom: 27rem;
+    margin-left: 615px;
+    width: 500px;">{{f.EvTyDecs}}</p>
+            <p style="margin-top: -432px;
+    margin-bottom: 27rem;
+    margin-left: 615px;
+    width: 500px; font-size: 30px; font-weight: bold"> Expected Price : {{f.EPrice}} $ </p>
 
           </div>
-        </div>
-      </div>
+
     <div class="col-2"></div>
-<div> <h4> Some Location for event </h4></div>
+<div > <h4> Some Location for event </h4></div>
 <div class="col-3" *ngFor=" let f of location" >
   <ul>
   <li>Location: {{f.NameLocal}}</li>
   <li>Address: {{f.Address}}</li>
-     <li>Time Open: {{f.Time_Open}}</li>
+     <li>Time Open: {{f.Time_Open}} </li>
      <li>Time Close: {{f.Time_Close}}</li>
      <li> Total Seat: {{f.TotalSeatQty}}</li>
      <li> Tel: {{f.Tel}}</li>
    </ul>
 </div>
 
-<div> <h4> Service Package  </h4></div>
-<div class="col-3" *ngFor=" let f of service" >
+<div> <h4 > Service Package  </h4></div>
+<div class="col-3 " *ngFor=" let f of service" >
   <ul>
     <li>Pack Name: {{f.NameServ}}</li>
-    <li>Price: {{f.ServPrice}}</li>
+    <li style="font-weight: bold">Price: {{f.ServPrice}} $ </li>
     <li>People Sevice: {{f.ServicePeople}} </li>
   </ul>
 </div>
@@ -42,9 +47,9 @@
 <div id="carouselExampleCaptions" class="carousel slide col-3 col-lg-3 col-xl-3 col-sm-3" data-bs-ride="false" >
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img  src="../assets/assets/img/anh/concert1.jpg" class="d-block w-100" alt="...">
+      <img  src="../assets/assets/img/anh/concert1.jpg" class="d-block w-100 " alt="...">
       <div class="carousel-caption d-none d-md-block">
-        <h5> Past Event</h5>
+        <h5 > Past Event</h5>
         <p> Click for Continue </p>
       </div>
     </div>
@@ -52,7 +57,7 @@
       <img  src="/../assets/assets/{{item.EvGalle}}" class="d-block w-100" alt="...">
       <div class="carousel-caption d-none d-md-block">
         <a href="#" routerLink="/detailEv/{{item.EventID}}">
-          <h5>{{item.EvName}}</h5>
+          <h5 class="son7 ">{{item.EvName}}</h5>
         </a>
       </div>
     </div>
